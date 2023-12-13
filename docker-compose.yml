@@ -16,7 +16,21 @@ services:
 
   prod:
     build: .
+    restart: unless-stopped
     ports:
       - "80:80"
     environment:
       - NODE_ENV=production
+    # Used in Reverse Proxy Setup
+    # expose:
+    #   - 80
+    # Networks
+    # networks:
+    #   - reverse_proxy_network
+
+
+# Used in a reverse proxy setup
+# networks:
+#   reverse_proxy_network:
+#     name: reverse_proxy_network
+#     external: true
