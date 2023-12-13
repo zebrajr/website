@@ -18,5 +18,4 @@ function WelcomeText(){
     )
 }
 
-
 export default WelcomeText;
