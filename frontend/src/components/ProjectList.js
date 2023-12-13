@@ -3,6 +3,7 @@ import { List, ListItem, Typography, ListItemText, Link as MuiLink } from '@mui/
 
 const titleText = "GitHub Projects";
 const subTitleText = "A few of my Open Source Software (OSS) repositories";
+const sectionID = 'oss';
 
 const projects = [
     {
@@ -39,16 +40,18 @@ const projects = [
 
 function ProjectList() {
     return (
-        <div id="projects">
-            <Typography variant="h4">{ titleText }</Typography>
-            <Typography variant="h9">{ subTitleText }</Typography>
+        <div id="projectsList">
+            <section id={ sectionID }>
+                <Typography variant="h4">{ titleText }</Typography>
+                <Typography variant="h9">{ subTitleText }</Typography>
 
-            {projects.map((project, index) => (
-                <ListItemText
-                    primary={<MuiLink href={project.url} target="_blank">{project.name}</MuiLink>}
-                    secondary={project.description ? project.description : ''}
-                />
-            ))}
+                {projects.map((project, index) => (
+                    <ListItemText
+                        primary={<MuiLink href={project.url} target="_blank">{project.name}</MuiLink>}
+                        secondary={project.description ? project.description : ''}
+                    />
+                ))}
+            </section>
         </div>
     );
 }

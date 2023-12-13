@@ -1,9 +1,12 @@
 import React from 'react';
 import { Typography, Link as MuiLink } from '@mui/material';
 
+const sectionID = 'projects';
+
 function ProjectsText() {
     return (
         <div style={{ margin: '20px' }}>
+            <section id={ sectionID }>
             <Typography variant="body1" paragraph>
                 Welcome to my portfolio. Here you will find a collection of my side projects, 
                 professional work, and other relevant links that I find interesting.
@@ -19,6 +22,7 @@ function ProjectsText() {
                 <MuiLink href="mailto:me@example.com"> contact me.</MuiLink>
                 I am always open to discussing new projects and creative ideas.
             </Typography>
+            </section>
         </div>
     );
 }

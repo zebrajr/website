@@ -1,12 +1,18 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 
+const sectionID = 'welcome';
+
 function WelcomeText(){
     return (
         <div style={{ margin: '20px' }}>
-            <section id="welcome">
+            <section id={ sectionID }>
                     <h1>Welcome to My (Web)Portfolio</h1>
-                    <p>Discover my projects and more.</p>
+                    <p>
+                        Hello there!
+                        <br />
+                    </p>
+                    
                 </section>
         </div>
     )

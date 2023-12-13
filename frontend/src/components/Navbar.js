@@ -13,14 +13,14 @@ function Navbar() {
                         <MuiLink href="#welcome" color="inherit" variant="button" sx={{ margin: 1 }}>
                             Welcome
                         </MuiLink>
-                        <MuiLink href="#oss" color="inherit" variant="button" sx={{ margin: 1 }}>
-                            OSS
-                        </MuiLink>
                         <MuiLink href="#projects" color="inherit" variant="button" sx={{ margin: 1 }}>
                             Projects
                         </MuiLink>
-                        <MuiLink href="#contact" color="inherit" variant="button" sx={{ margin: 1 }}>
-                            Contact
+                        <MuiLink href="#oss" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            OSS
+                        </MuiLink>
+                        <MuiLink href="#skills" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            Skills
                         </MuiLink>
                     </Box>
                 </Box>
