@@ -1,14 +1,29 @@
 import React from 'react';
-import { AppBar, Toolbar, Link as MuiLink } from '@mui/material';
+import { AppBar, Toolbar, Typography, Link as MuiLink, Box } from '@mui/material';
 
 function Navbar() {
     return (
         <AppBar position="static">
             <Toolbar>
-                <MuiLink href="#home" color="inherit" variant="button">Home</MuiLink>
-                <MuiLink href="#projects" color="inherit" variant="button">OSS</MuiLink>
-                <MuiLink href="#projects" color="inherit" variant="button">Projects</MuiLink>
-                <MuiLink href="#contact" color="inherit" variant="button">Contact</MuiLink>
+                <Box display="flex" justifyContent="space-between" width="100%">
+                    <Typography variant="h6" color="inherit" noWrap>
+                        Carlos Sousa
+                    </Typography>
+                    <Box>
+                        <MuiLink href="#welcome" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            Welcome
+                        </MuiLink>
+                        <MuiLink href="#oss" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            OSS
+                        </MuiLink>
+                        <MuiLink href="#projects" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            Projects
+                        </MuiLink>
+                        <MuiLink href="#contact" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            Contact
+                        </MuiLink>
+                    </Box>
+                </Box>
             </Toolbar>
         </AppBar>
     );

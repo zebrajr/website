@@ -2,7 +2,9 @@ import './App.css';
 
 import React from 'react';
 import Navbar from './components/Navbar';
+import WelcomeText from './components/Welcome';
 import ProjectList from './components/ProjectList';
+import ProjectsText from './components/ProjectsText';
 import Footer from './components/Footer';
 
 function App() {
@@ -10,12 +12,9 @@ function App() {
         <div className="App">
             <Navbar />
             <main>
-                <section id="home">
-                    <h1>Welcome to My Portfolio</h1>
-                    <p>Discover my projects and more.</p>
-                </section>
+                <WelcomeText />
+                <ProjectsText />
                 <ProjectList />
-                {/* You can add more sections here */}
             </main>
             <Footer />
         </div>
