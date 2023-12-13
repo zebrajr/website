@@ -3,10 +3,10 @@ import { Typography } from '@mui/material';
 
 function Footer() {
     return (
-        <footer style={{ textAlign: 'center', marginTop: '20px' }}>
-            <Typography variant="body2">© 2023 by Me. All rights reserved.</Typography>
+        <footer style={{ textAlign: 'center', marginTop: '20px', paddingBottom: '1000px' }}>
+            <Typography variant="body2">© 2023 by Me. All (some?) rights reserved, I think?</Typography>
             <Typography variant="body2">
-                Email: <a href="mailto:me@example.com">me@example.com</a>
+                If you don't know me, you can try reaching out via: <a href="mailto:contact@carlossousa.tech">contact@carlossousa.tech</a>
             </Typography>
         </footer>
     );

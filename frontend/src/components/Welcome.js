@@ -7,12 +7,12 @@ function WelcomeText(){
     return (
         <div style={{ margin: '20px' }}>
             <section id={ sectionID }>
-                    <h1>Welcome to My (Web)Portfolio</h1>
-                    <p>
+                    <Typography variant="h4" color="inherit" noWrap>
                         Hello there!
-                        <br />
-                    </p>
-                    
+                    </Typography>
+                    <Typography variant="subtitle1" color="inherit" noWrap>
+                        Welcome to My (Web)Portfolio
+                    </Typography>
                 </section>
         </div>
     )

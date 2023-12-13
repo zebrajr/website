@@ -8,6 +8,7 @@ import ProjectsText from './components/ProjectsText';
 import OnlinePresence from './components/OnlinePresence';
 import CompetenciesSkills from './components/Skills';
 import Footer from './components/Footer';
+import FootPadding from './components/FootPadding';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <OnlinePresence />
             </main>
             <Footer />
+            <FootPadding />
         </div>
     );
 }

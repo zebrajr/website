@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Link as MuiLink } from '@mui/material';
+import { typographyStyles } from '../style';
 
 const titleText = "Computers, Fluffy Clouds and Hosting";
 const subTitleText = "Some projects and similar (not so) random stuff that I've been hosting";
@@ -25,13 +26,14 @@ const tornIndexerData = {
     sourceURL: 'https://www.torn.com/'
 }
 
+
 function ProjectsText() {
     return (
         <div style={{ margin: '20px' }}>
             <section id={ sectionID }>
-            <Typography variant="h4">{ titleText }</Typography>
-            <Typography variant="h9">{ subTitleText }</Typography>
-            <Typography variant="body1" paragraph>
+            <Typography variant="h4" style={ typographyStyles.largeBoldHeaderPrimary }>{ titleText }</Typography>
+            <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
+            <Typography variant="body1" paragraph style={ typographyStyles.colorfulEmphasis }>
                 So, one of the many things I enjoy having (mostly for me to be fair) is my <MuiLink href={ wikipediaData.url } target="_blank">{ wikipediaData.text }</MuiLink>.
                 <br/>Nothing fancy, just hosting <MuiLink href={ wikipediaData.sourceURL } target="_blank">{ wikipediaData.sourceName }</MuiLink> so I can keep some notes, references (maybe some guides?), and just random thoughts. 
             </Typography>
@@ -43,6 +45,13 @@ function ProjectsText() {
                 I'm still hosting a <MuiLink href={ tornIndexerData.url } target="_blank">{ tornIndexerData.text }</MuiLink> for <MuiLink href={ tornIndexerData.sourceURL } target="_blank">{ tornIndexerData.sourceName }</MuiLink>.
                 <br/>I honestly stopped using it, like, 1 month after I finished the Proof of Concept (PoC), but some players still use it, so, guess it stays up.
                 <br/>If for whatever reason you are interested in it ( don't code shame me :( ), you will find the Source Code in my GitHub.
+            </Typography>
+            <Typography variant="body1" paragraph>
+               I also host a few more services, but either I don't want or can't share publically.
+            </Typography>
+            <Typography variant="body1" paragraph>
+               Besides that, I like to run my own HomeLab, with all the whistles and bells (and the nerve destroying) that come from it.
+               <br/>Nothing special, just a Proxmox with VMs and Containers, 3/2/1 Backup, mainly for "Linux ISOs" and stuff. 
             </Typography>
             </section>
         </div>

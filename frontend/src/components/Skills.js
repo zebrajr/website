@@ -1,5 +1,6 @@
 import React from 'react';
-import { List, ListItem, Typography, ListItemText, Link as MuiLink } from '@mui/material';
+import { Typography, ListItemText } from '@mui/material';
+import { typographyStyles } from '../style';
 
 const titleText = "Skills & Competencies";
 const subTitleText = "A few of the \"skills\" I have";
@@ -37,8 +38,8 @@ function CompetenciesSkills() {
     return (
         <div style={{ margin: '20px' }}>
             <section id={ sectionID }>
-                <Typography variant="h4">{ titleText }</Typography>
-                <Typography variant="h9">{ subTitleText }</Typography>
+                <Typography variant="h4" style={ typographyStyles.largeBoldHeaderPrimary }>{ titleText }</Typography>
+                <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
 
                 {skills.map((skill, index) => (
                     <ListItemText

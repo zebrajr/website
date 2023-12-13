@@ -1,5 +1,6 @@
 import React from 'react';
 import { List, ListItem, Typography, ListItemText, Link as MuiLink } from '@mui/material';
+import { typographyStyles } from '../style';
 
 const titleText = "GitHub Projects";
 const subTitleText = "A few of my Open Source Software (OSS) repositories";
@@ -38,12 +39,14 @@ const projects = [
     }
 ];
 
+
+
 function ProjectList() {
     return (
         <div id="projectsList">
             <section id={ sectionID }>
-                <Typography variant="h4">{ titleText }</Typography>
-                <Typography variant="h9">{ subTitleText }</Typography>
+                <Typography variant="h4" style={ typographyStyles.largeBoldHeaderSecondary }>{ titleText }</Typography>
+                <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
 
                 {projects.map((project, index) => (
                     <ListItemText
