@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, ListItemText } from '@mui/material';
-import { typographyStyles } from '../style';
+import { typographyStyles, mainDivStyle, mainSectionStyle } from '../style';
 
 const titleText = "Skills & Competencies";
 const subTitleText = "A few of the \"skills\" I have";
@@ -15,12 +15,12 @@ const skills = [
     {
         name: 'Technologies',
         rating: 'Advanced',
-        description: 'Linux, Docker, React, Node.js, Git, Ansible'
+        description: 'Linux, Docker, Node.js, Git, Ansible'
     },
     {
         name: 'Frameworks, Software and Such',
         rating: 'Intermediate',
-        description: 'VMWare, KVM/QEMU, MySQL, MSSQL, PostgreSQL, SQLite, MariaDB'
+        description: 'React, VMWare, KVM/QEMU, MySQL, MSSQL, PostgreSQL, SQLite, MariaDB'
     },
     {
         name: 'Tech Related',
@@ -36,15 +36,15 @@ const skills = [
 
 function CompetenciesSkills() {
     return (
-        <div style={{ margin: '20px' }}>
-            <section id={ sectionID }>
+        <div style={{ ...mainDivStyle }}>
+            <section id={ sectionID } style={ mainSectionStyle }>
                 <Typography variant="h4" style={ typographyStyles.largeBoldHeaderPrimary }>{ titleText }</Typography>
                 <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
 
                 {skills.map((skill, index) => (
                     <ListItemText
                         primary={ skill.name }
-                        secondary={ skill.description + ' - ' + skill.rating}
+                        secondary={ skill.description + ' [' + skill.rating + ']' }
                     />
                 ))}
             </section>

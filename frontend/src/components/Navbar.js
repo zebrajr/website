@@ -17,6 +17,9 @@ function Navbar() {
                         <img src={ bannerImage.name } width="30px" alt={ bannerImage.alt }/> Carlos Sousa
                     </Typography>
                     <Box>
+                        <MuiLink href="#aboutme" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            About  Me
+                        </MuiLink>
                         <MuiLink href="#projects" color="inherit" variant="button" sx={{ margin: 1 }}>
                             Projects
                         </MuiLink>

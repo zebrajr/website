@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import Navbar from './components/Navbar';
 import WelcomeText from './components/Welcome';
+import AboutMe from './components/AboutMe';
 import ProjectList from './components/ProjectList';
 import ProjectsText from './components/ProjectsText';
 import OnlinePresence from './components/OnlinePresence';
@@ -16,6 +17,7 @@ function App() {
             <Navbar />
             <main>
                 <WelcomeText />
+                <AboutMe />
                 <ProjectsText />
                 <ProjectList />
                 <CompetenciesSkills />

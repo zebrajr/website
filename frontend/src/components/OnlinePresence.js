@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, ListItemText, Link as MuiLink } from '@mui/material';
-import { typographyStyles } from '../style';
+import { typographyStyles, mainDivStyle, mainSectionStyle } from '../style';
 
 const titleText = "Online Presence";
 const subTitleText = "A few of the the places I can be found in the Internet";
@@ -26,8 +26,8 @@ const onlineReferences = [
 
 function OnlinePresence() {
     return (
-        <div style={{ margin: '20px' }}>
-            <section id={ sectionID }>
+        <div style={{ ...mainDivStyle }}>
+            <section id={ sectionID } style={ mainSectionStyle }>
                 <Typography variant="h4" style={ typographyStyles.largeBoldHeaderSecondary }>{ titleText }</Typography>
                 <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
 

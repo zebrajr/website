@@ -12,9 +12,27 @@ const typographyStyles = {
     subtleSubheading : {
         fontStyle: 'italic',
         color: '#757575',
-        marginBottom: '25px'
+        marginBottom: '25px',
     }
 }
 
 
-export { typographyStyles };
+const mainDivStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%', // Adjust as needed
+    marginTop: '50px',
+    marginBottom: '20px',
+    width: '100%',
+    paddingLeft: '20px',
+    paddingRight: '20px',
+    boxSizing: 'border-box'
+}
+
+const mainSectionStyle = {
+    maxWidth: '700px',
+    wordWrap: 'break-word'
+}
+
+export { typographyStyles, mainDivStyle, mainSectionStyle };

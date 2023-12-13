@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Link as MuiLink } from '@mui/material';
-import { typographyStyles } from '../style';
+import { typographyStyles, mainDivStyle, mainSectionStyle } from '../style';
 
 const titleText = "Computers, Fluffy Clouds and Hosting";
 const subTitleText = "Some projects and similar (not so) random stuff that I've been hosting";
@@ -29,8 +29,8 @@ const tornIndexerData = {
 
 function ProjectsText() {
     return (
-        <div style={{ margin: '20px' }}>
-            <section id={ sectionID }>
+        <div style={{ ...mainDivStyle}}>
+            <section id={ sectionID } style={ mainSectionStyle }>
             <Typography variant="h4" style={ typographyStyles.largeBoldHeaderPrimary }>{ titleText }</Typography>
             <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
             <Typography variant="body1" paragraph style={ typographyStyles.colorfulEmphasis }>
@@ -38,7 +38,7 @@ function ProjectsText() {
                 <br/>Nothing fancy, just hosting <MuiLink href={ wikipediaData.sourceURL } target="_blank">{ wikipediaData.sourceName }</MuiLink> so I can keep some notes, references (maybe some guides?), and just random thoughts. 
             </Typography>
             <Typography variant="body1" paragraph>
-                I also run a <MuiLink href={ archiveData.url } target="_blank">{ archiveData.text }</MuiLink> where I keep articles that I either reference or enjoy re-reading, and don't want them to be lost due to natural state of the internet. 
+                I also run an <MuiLink href={ archiveData.url } target="_blank">{ archiveData.text }</MuiLink> where I keep articles that I either reference or enjoy re-reading, and don't want them to be lost due to natural state of the internet. 
                 <br/>In case you want to have your own, it's called <MuiLink href={ archiveData.sourceURL } target="_blank">{ archiveData.sourceName }</MuiLink>. I have my issues with it, don't get me started on the topic.
             </Typography>
             <Typography variant="body1" paragraph>
@@ -51,7 +51,7 @@ function ProjectsText() {
             </Typography>
             <Typography variant="body1" paragraph>
                Besides that, I like to run my own HomeLab, with all the whistles and bells (and the nerve destroying) that come from it.
-               <br/>Nothing special, just a Proxmox with VMs and Containers, 3/2/1 Backup, mainly for "Linux ISOs" and stuff. 
+               <br/>Nothing special, just a Proxmox with VMs and Containers, 3/2/1 Backup and so on, mainly for "Linux ISOs", learning & testing and stuff. 
             </Typography>
             </section>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { List, ListItem, Typography, ListItemText, Link as MuiLink } from '@mui/material';
-import { typographyStyles } from '../style';
+import { Typography, ListItemText, Link as MuiLink } from '@mui/material';
+import { typographyStyles, mainDivStyle, mainSectionStyle } from '../style';
 
 const titleText = "GitHub Projects";
 const subTitleText = "A few of my Open Source Software (OSS) repositories";
@@ -43,8 +43,8 @@ const projects = [
 
 function ProjectList() {
     return (
-        <div id="projectsList">
-            <section id={ sectionID }>
+        <div id="projectsList" style={{ ...mainDivStyle }}>
+            <section id={ sectionID } style={ mainSectionStyle }>
                 <Typography variant="h4" style={ typographyStyles.largeBoldHeaderSecondary }>{ titleText }</Typography>
                 <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
 
