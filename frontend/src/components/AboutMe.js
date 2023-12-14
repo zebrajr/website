@@ -23,7 +23,7 @@ function AboutMe() {
                 I also enjoy growing my knowledge in all kind of random stuff, but social sciences and general "not black and white" topics float my boat the most.
             </Typography>
             <Typography variant="body1" paragraph style={ typographyStyles.colorfulEmphasis }>
-                Improving my skills in both areas that are directly relatable to the ones mentioned above as well as **completely** non related also scratch a itch. So in the same day I might be trying to improve my CAD knowledge, doing some weight lifting and general fitness and then deep diving into that sweeet new <s>buzzword</s> technology.
+                Improving my skills in both areas that are directly relatable to the ones mentioned above as well as **completely** non related also scratch a itch. So in the same day I might be trying to improve my CAD knowledge, doing some weight lifting and general fitness and then deep diving into that sweet new <s>buzzword</s> technology.
             </Typography>
             </section>
         </div>
