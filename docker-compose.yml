@@ -14,19 +14,21 @@ services:
     #stdin_open: true
     #tty: true
 
-  prod:
+  website:
     build: .
+    container_name: website
     restart: unless-stopped
+    # Use WITHOUT Reverse Proxy Setup
     ports:
       - "80:80"
     environment:
       - NODE_ENV=production
     # Used in Reverse Proxy Setup
-    # expose:
+    #expose:
     #   - 80
     # Networks
-    # networks:
-    #   - reverse_proxy_network
+    #networks:
+    #  - reverse_proxy_network
 
 
 # Used in a reverse proxy setup
