@@ -33,9 +33,14 @@ const projects = [
         description: 'Scripts to deploy and / or manage my HomeLab (and fluffy cloudy stuff)'
     },
     {
-        name: 'GitHub Backup-er',
-        url: 'https://github.com/zebrajr/github-backuper',
+        name: 'GitHub Backupper',
+        url: 'https://github.com/zebrajr/github-backupper',
         description: 'A simple Bash script to download (and keep up-to-date) projects from GitHub to your local system'
+    },
+    {
+        name: 'Docker Stack Backupper',
+        url: 'https://github.com/zebrajr/docker-stack-backupper',
+        description: 'A collection of Bash scripts to backup docker(-compose) data and running images. Ideal to migrate or to backup Docker Stacks in the Cloud'
     }
 ];
 
