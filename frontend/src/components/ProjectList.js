@@ -34,7 +34,7 @@ const projects = [
     },
     {
         name: 'GitHub Backup-er',
-        url: 'https://github.com/zebrajr/github-backupere',
+        url: 'https://github.com/zebrajr/github-backuper',
         description: 'A simple Bash script to download (and keep up-to-date) projects from GitHub to your local system'
     }
 ];
