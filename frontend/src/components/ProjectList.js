@@ -41,6 +41,11 @@ const projects = [
         name: 'Docker Stack Backupper',
         url: 'https://github.com/zebrajr/docker-stack-backupper',
         description: 'A collection of Bash scripts to backup docker(-compose) data and running images. Ideal to migrate or to backup Docker Stacks in the Cloud'
+    },
+    {
+        name: 'ReactoCalc',
+        url: 'https://github.com/zebrajr/ReactoCalc',
+        description: 'A React application that does calculations that (are sometimes) useful. '
     }
 ];
 
