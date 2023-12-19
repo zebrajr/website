@@ -3,7 +3,7 @@ Personal Website and Portfolio
 
 Built with React
 
-Live version can be found at [carlossousa.tech](carlossousa.tech)
+Live version can be found at [carlossousa.tech](https://carlossousa.tech)
 
 
 ### Running

@@ -43,9 +43,14 @@ const projects = [
         description: 'A collection of Bash scripts to backup docker(-compose) data and running images. Ideal to migrate or to backup Docker Stacks in the Cloud'
     },
     {
+        name: 'Travel Tracer',
+        url: 'https://github.com/zebrajr/traveltracer',
+        description: 'A React application that uses Leaflet and GeoJSON data to display places I\'ve traveled to or want to visit'
+    },
+    {
         name: 'ReactoCalc',
         url: 'https://github.com/zebrajr/ReactoCalc',
-        description: 'A React application that does calculations that (are sometimes) useful. '
+        description: 'A React application that does calculations that (are sometimes) useful.'
     }
 ];
 

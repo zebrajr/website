@@ -31,6 +31,13 @@ const reactoCalcData = {
     url: 'http://calc.carlossousa.tech/',
     sourceName: 'GitHub',
     sourceURL: 'https://github.com/zebrajr/ReactoCalc'
+}
+
+const traveltracer = {
+    text: 'Travel Tracer',
+    url: 'https://travel.carlossousa.tech',
+    sourceName: 'GitHub',
+    sourceURL: 'https://github.com/zebrajr/traveltracer'
 } 
 
 
@@ -54,8 +61,12 @@ function ProjectsText() {
                 <br/>If for whatever reason you are interested in it ( don't code shame me :( ), you will find the Source Code in my GitHub.
             </Typography>
             <Typography variant="body1" paragraph>
-                I'm also hosting a calculator,<MuiLink href={ reactoCalcData.url } target="_blank">{ reactoCalcData.text }</MuiLink>. Source code also available in <MuiLink href={ reactoCalcData.sourceURL } target="_blank">{ reactoCalcData.sourceName }</MuiLink>.
+                I'm also hosting a calculator, <MuiLink href={ reactoCalcData.url } target="_blank">{ reactoCalcData.text }</MuiLink>. Source code also available in <MuiLink href={ reactoCalcData.sourceURL } target="_blank">{ reactoCalcData.sourceName }</MuiLink>.
                 <br/>It's a simple calculator that is useful for specific situations, mainly financial ones. Nothing fancy, just something that was put together (semi-)quickly.
+            </Typography>
+            <Typography variant="body1" paragraph>
+                I also host this <MuiLink href={ traveltracer.url } target="_blank">{ traveltracer.text }</MuiLink>, source code in <MuiLink href={ traveltracer.sourceURL } target="_blank">{ traveltracer.sourceName }</MuiLink>.
+                <br/>A one page application that shows Markers on a rendered GeoJSON file with Leaflet, to display a few of the places I either visited or want to visit. 
             </Typography>
             <Typography variant="body1" paragraph>
                I also host a few more services, but either I don't want or can't share publically.
