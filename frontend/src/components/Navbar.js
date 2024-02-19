@@ -17,20 +17,11 @@ function Navbar() {
                         <img src={ bannerImage.name } width="30px" alt={ bannerImage.alt }/> Carlos Sousa
                     </Typography>
                     <Box>
-                        <MuiLink href="#aboutme" color="inherit" variant="button" sx={{ margin: 1 }}>
-                            About  Me
+                        <MuiLink href="/" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            Landing Page
                         </MuiLink>
-                        <MuiLink href="#projects" color="inherit" variant="button" sx={{ margin: 1 }}>
-                            Projects
-                        </MuiLink>
-                        <MuiLink href="#oss" color="inherit" variant="button" sx={{ margin: 1 }}>
-                            OSS
-                        </MuiLink>
-                        <MuiLink href="#skills" color="inherit" variant="button" sx={{ margin: 1 }}>
-                            Skills
-                        </MuiLink>
-                        <MuiLink href="#onlinePresence" color="inherit" variant="button" sx={{ margin: 1 }}>
-                            Online Presence
+                        <MuiLink href="quotes" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            Quotes
                         </MuiLink>
                     </Box>
                 </Box>

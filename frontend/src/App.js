@@ -1,30 +1,30 @@
 import './App.css';
-
 import React from 'react';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Import Components
 import Navbar from './components/Navbar';
-import WelcomeText from './components/Welcome';
-import AboutMe from './components/AboutMe';
-import ProjectList from './components/ProjectList';
-import ProjectsText from './components/ProjectsText';
-import OnlinePresence from './components/OnlinePresence';
-import CompetenciesSkills from './components/Skills';
 import Footer from './components/Footer';
 import FootPadding from './components/FootPadding';
+
+// Import Pages
+import LandingPage from './pages/LandingPage';
+import QuotesPage from './pages/QuotesPage';
 
 function App() {
     return (
         <div className="App">
+        <Router>
             <Navbar />
             <main>
-                <WelcomeText />
-                <AboutMe />
-                <ProjectsText />
-                <ProjectList />
-                <CompetenciesSkills />
-                <OnlinePresence />
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/" element={<QuotesPage />} />
+                </Routes>
             </main>
             <Footer />
             <FootPadding />
+        </Router>
         </div>
     );
 }
