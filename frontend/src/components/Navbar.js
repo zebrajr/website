@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Link as MuiLink, Box } from '@mui/material
 
 
 const bannerImage = {
-    name: 'website_logo_192.png', 
+    name: '/website_logo_192.png', 
     alt: 'Carlos Sousa Logo'
 }
 

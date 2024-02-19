@@ -13,19 +13,19 @@ import QuotesPage from './pages/QuotesPage';
 
 function App() {
     return (
-        <div className="App">
         <Router>
+        <div className="App">
             <Navbar />
             <main>
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
-                    <Route path="/" element={<QuotesPage />} />
+                    <Route path="/quotes/" element={<QuotesPage />} />
                 </Routes>
             </main>
             <Footer />
             <FootPadding />
-        </Router>
         </div>
+        </Router>
     );
 }
 
