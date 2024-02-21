@@ -20,8 +20,11 @@ function Navbar() {
                         <MuiLink href="/" color="inherit" variant="button" sx={{ margin: 1 }}>
                             Landing Page
                         </MuiLink>
-                        <MuiLink href="quotes" color="inherit" variant="button" sx={{ margin: 1 }}>
+                        <MuiLink href="/quotes" color="inherit" variant="button" sx={{ margin: 1 }}>
                             Quotes
+                        </MuiLink>
+                        <MuiLink href="/lifetips" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            Life Tips
                         </MuiLink>
                     </Box>
                 </Box>

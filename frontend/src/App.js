@@ -10,6 +10,7 @@ import FootPadding from './components/FootPadding';
 // Import Pages
 import LandingPage from './pages/LandingPage';
 import QuotesPage from './pages/QuotesPage';
+import LifeTipsPage from './pages/LifeTipsPage';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
                     <Route path="/quotes/" element={<QuotesPage />} />
+                    <Route path="/lifetips/" element={<LifeTipsPage />} />
                 </Routes>
             </main>
             <Footer />
