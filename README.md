@@ -10,7 +10,7 @@ Live version can be found at [carlossousa.tech](https://carlossousa.tech)
 
 If it is the first time you are running the project, the npm modules will be missing.
 
-Install them by running ``npm install``
+Install them by running ``npm install`` or ``docker-compose up dev npm install``
 
 ##### Development
 
@@ -18,4 +18,4 @@ Install them by running ``npm install``
 
 ##### Production
 
-``docker-compose up --build prod``
+``docker-compose up --build website``
