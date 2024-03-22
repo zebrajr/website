@@ -1,61 +1,20 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useState } from 'react';
 
 import TipsTypeSelector from '../components/LifeTipsHeader';
-import LifeTipsQuotesComponent from '../components/LifeTipsQuotes';
+import LifeTipsComponent from '../components/LifeTips'
 
-const defaultComponentLoading = 'LifeTipsQuotes';
-
-
-const pStyles = [
-    {
-        fontSize: '16px',
-        color: 'navy',
-        display: 'inline'
-    },
-    {
-        fontSize: '16px',
-        color: 'crimson',
-        display: 'inline'
-    },
-    {
-        fontSize: '16px',
-        color: 'gold',
-        display: 'inline'
-    },
-    {
-        fontSize: '16px',
-        color: 'dodgerBlue',
-        display: 'inline'
-    },
-    {
-        fontSize: '16px',
-        color: 'olive',
-        display: 'inline'
-    }
-]
-
-
-const selectRandomPStyle = () => {
-    return Math.floor(Math.random() * pStyles.length);
-}
+//const defaultComponentLoading = 'LifeTipsQuotes';
 
 
 function LifeTipsPage() {
-    const [CurrentComponent, setCurrentComponent] = useState(null);
-
-    const handleComponentLoaded = (Component) => {
-        setCurrentComponent(() => Component);
-    };
+    const [filePath, setFilePath] = useState(null);
 
     return (
         <div>
-          <TipsTypeSelector onComponentLoaded={handleComponentLoaded} />
-          <div>
-            {/* Render the dynamically loaded component if it exists */}
-            {CurrentComponent ? <CurrentComponent /> : 'Select a component to display.'}
-          </div>
+            <TipsTypeSelector onComponentLoaded={setFilePath} />
+            {filePath && <LifeTipsComponent filePath={filePath} />}
         </div>
-      );
+    );
 }
 
 export default LifeTipsPage;

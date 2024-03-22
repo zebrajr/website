@@ -14,14 +14,16 @@ function Navbar() {
             <Toolbar>
                 <Box display="flex" justifyContent="space-between" width="100%">
                     <Typography variant="h6" color="inherit" noWrap>
-                        <img src={ bannerImage.name } width="30px" alt={ bannerImage.alt }/> Carlos Sousa
+                        <MuiLink href="/" color="inherit" variant="button" sx={{ margin: 1 }}>
+                            <img src={ bannerImage.name } width="30px" alt={ bannerImage.alt }/> Carlos Sousa
+                        </MuiLink>
                     </Typography>
                     <Box>
                         <MuiLink href="/" color="inherit" variant="button" sx={{ margin: 1 }}>
                             Landing Page
                         </MuiLink>
                         <MuiLink href="/quotes" color="inherit" variant="button" sx={{ margin: 1 }}>
-                            Quotes
+                            Arts Quotes
                         </MuiLink>
                         <MuiLink href="/lifetips" color="inherit" variant="button" sx={{ margin: 1 }}>
                             Life Tips

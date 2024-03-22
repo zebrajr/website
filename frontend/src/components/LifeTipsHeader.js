@@ -1,26 +1,21 @@
-import React, { useState } from 'react';
+import { Button, ButtonGroup } from '@mui/material';
 
-import LifeTipsQuotesComponent from '../components/LifeTipsQuotes';
 
 function TipsTypeSelector({ onComponentLoaded }) {
-    const loadComponent = async (componentName) => {
-      try {
-        const { default: SelectedComponent } = await import(`../components/${componentName}`);
-        onComponentLoaded(SelectedComponent); // Use the callback to pass the loaded component
-      } catch (error) {
-        console.error('Error loading component: ', error);
-        onComponentLoaded(null); // Handle error case
-      }
-    };
-  
-    return (
-      <div className="lifeTipsTypeSelector">
-        <div>
-          <button onClick={() => loadComponent('LifeTipsQuotes')}>Quotes</button>
-          <button onClick={() => loadComponent('LifeTipsTips')}>Tips</button>
-        </div>
+  const loadContent = (filePath) => {
+      onComponentLoaded(filePath); // Use the callback to pass the file path
+  };
+
+  return (
+      <div className="lifeTipsTypeSelector" style={{ paddingTop: '10px', paddingBottom: '10px' }}>
+          <div>
+              <ButtonGroup variant='contained'>
+                  <Button onClick={() => loadContent('/lifetips/quotes.json')}>Quotes</Button>
+                  <Button onClick={() => loadContent('/lifetips/tips.json')}>Tips</Button>
+              </ButtonGroup>
+          </div>
       </div>
-    );
-  }
+  );
+}
 
 export default TipsTypeSelector;
