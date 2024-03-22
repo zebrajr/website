@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 
 function FootPadding() {
     return (
-        <footer style={{ textAlign: 'center', marginTop: '20px'}}>
+        <footer style={{ textAlign: 'center', marginTop: '20px', paddingTop: '1000px' }}>
             <Typography variant="body2">
                 The padding was on purpose :)
                 <br />It's <b>very</b> nice to be able to scroll past the bottom of the page :)
