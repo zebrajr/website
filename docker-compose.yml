@@ -18,6 +18,9 @@ services:
     build: .
     container_name: website
     restart: unless-stopped
+    volumes:
+      - ./frontend/public/quotes:/usr/share/nginx/html/quotes:ro
+      - ./frontend/public/lifetips:/usr/share/nginx/html/lifetips:ro
     # Use WITHOUT Reverse Proxy Setup
     ports:
       - "80:80"
