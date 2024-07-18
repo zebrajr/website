@@ -13,6 +13,11 @@ const typographyStyles = {
         fontStyle: 'italic',
         color: '#757575',
         marginBottom: '25px',
+    },
+    skillRankOrder : {
+        fontStyle: 'italic',
+        color: '#e29c4a',
+        marginBottom: '25px',
     }
 }
 
