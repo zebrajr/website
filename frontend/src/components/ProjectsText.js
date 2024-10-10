@@ -38,7 +38,14 @@ const traveltracer = {
     url: 'https://travel.carlossousa.tech',
     sourceName: 'GitHub',
     sourceURL: 'https://github.com/zebrajr/traveltracer'
-} 
+}
+
+const statuspage = {
+    text: 'Status Page',
+    url: 'https://status.carlossousa.tech',
+    sourceName: 'Gatus',
+    sourceURL: 'https://github.com/TwiN/gatus'
+}
 
 
 function ProjectsText() {
@@ -47,6 +54,10 @@ function ProjectsText() {
             <section id={ sectionID } style={ mainSectionStyle }>
             <Typography variant="h4" style={ typographyStyles.largeBoldHeaderPrimary }>{ titleText }</Typography>
             <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
+            <Typography variant="body1" paragraph style={ typographyStyles.colorfulEmphasis }>
+                Let's start by the quickest, simplest (and one of the most useful for multiple reasons) - A <MuiLink href={ statuspage.url } target="_blank">{ statuspage.text }</MuiLink>.
+                <br/>A <MuiLink href={ statuspage.sourceURL } target="_blank">{ statuspage.sourceName }</MuiLink> instance so I know if everything is running at a quick glance and to inform others (and myself) of all the services that I host and run, or at least the ones that are ment to be easy to find. 
+            </Typography>
             <Typography variant="body1" paragraph style={ typographyStyles.colorfulEmphasis }>
                 So, one of the many things I enjoy having (mostly for me to be fair) is my <MuiLink href={ wikipediaData.url } target="_blank">{ wikipediaData.text }</MuiLink>.
                 <br/>Nothing fancy, just hosting <MuiLink href={ wikipediaData.sourceURL } target="_blank">{ wikipediaData.sourceName }</MuiLink> so I can keep some notes, references (maybe some guides?), and just random thoughts. 
