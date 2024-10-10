@@ -53,5 +53,50 @@
         "tip" : "Do not pray for an easy life. Pray for the strength to endure a difficult one.",
         "source" : "Bruce Lee",
         "description" : ""
+    },
+    {
+        "tip" : "No man ever steps in the same river twice, for it's not the same river and he's not the same man.",
+        "source" : "Heraclitus",
+        "description" : ""
+    },
+    {
+        "tip" : "God grant me, the Serenity to accept things I cannot change, the Courage to change the things I can, and the Wisdom to know the difference.",
+        "source" : "Serenity Prayer",
+        "description" : ""
+    },
+    { 
+        "tip" : "We see things not as they are, but as we are.",
+        "source" : "Game 'HUE'",
+        "description" : ""
+    },
+    { 
+        "tip" : "When you're screwing up, and nobody is saying anything to you anymore, that means they gave up [on you].",
+        "source" : "Randy Pausch",
+        "description" : ""
+    },
+    { 
+        "tip" : "The Universe is in no obligation to make sense to you.",
+        "source" : "Neil deGrasse Tyson",
+        "description" : ""
+    },
+    { 
+        "tip" : "The only thing necessary for the triumph of evil is for good men to do nothing.",
+        "source" : "Edmund Burke",
+        "description" : ""
+    },
+    { 
+        "tip" : "[talking about life] We cannot change the cards we are dealth, just how we play the hand.",
+        "source" : "Randy Pausch",
+        "description" : ""
+    },
+    { 
+        "tip" : "Out of suffering have emerged the strongest souls; the most massive characters are seared with scars.",
+        "source" : "Kahlil Gibran",
+        "description" : ""
+    },
+    { 
+        "tip" : "Your living is determined not so much by what life brings to you as by the attitude you bring to life; not so much by what happens to you as by the way your mind looks at what happens.",
+        "source" : "Kahlil Gibran",
+        "description" : ""
     }
 ]
