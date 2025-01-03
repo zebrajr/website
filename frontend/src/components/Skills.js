@@ -9,24 +9,24 @@ const sectionID = 'skills';
 
 const skills = [
     {
-        name: 'Coding',
-        rating: 'Intermediate',
-        description: 'JS/HTML/CSS, Python, PHP, Go, C, C++'
+        name: 'Coding & Scripting',
+        rating: 'Proficient',
+        description: 'bash, Go, JS / HTML / CSS, PHP, Powershell, Python'
     },
     {
         name: 'Technologies',
         rating: 'Expert',
-        description: 'Linux, Docker, Node.js, Git, Ansible'
+        description: 'Ansible, Docker, Git, KVM/QEMU, Linux, MariaDB, MongoDB, PostgreSQL, SQLite, VMWare, Windows'
     },
     {
         name: 'Frameworks, Software and Such',
         rating: 'Proficient',
-        description: 'React, VMWare, KVM/QEMU, MySQL, MSSQL, PostgreSQL, SQLite, MariaDB'
+        description: 'Django, Node.js, OpenCV, PyTorch, React'
     },
     {
         name: 'Tech Related',
         rating: 'Proficient',
-        description: 'System Administrator, DevOps, Powershell, bash'
+        description: 'DevOps, SysAdmin'
     },
     {
         name: 'Non-Tech',

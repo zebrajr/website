@@ -56,14 +56,14 @@ function ProjectsText() {
             <Typography variant="h9" style={ typographyStyles.subtleSubheading }>{ subTitleText }</Typography>
             <Typography variant="body1" paragraph style={ typographyStyles.colorfulEmphasis }>
                 Let's start by the quickest, simplest (and one of the most useful for multiple reasons) - A <MuiLink href={ statuspage.url } target="_blank">{ statuspage.text }</MuiLink>.
-                <br/>A <MuiLink href={ statuspage.sourceURL } target="_blank">{ statuspage.sourceName }</MuiLink> instance so I know if everything is running at a quick glance and to inform others (and myself) of all the services that I host and run, or at least the ones that are ment to be easy to find. 
+                <br/>A <MuiLink href={ statuspage.sourceURL } target="_blank">{ statuspage.sourceName }</MuiLink> instance so I know if everything is running at a quick glance and to inform others (and myself) of all the services that I host and run, or at least the ones that are meant to be easy to find. 
             </Typography>
             <Typography variant="body1" paragraph style={ typographyStyles.colorfulEmphasis }>
                 So, one of the many things I enjoy having (mostly for me to be fair) is my <MuiLink href={ wikipediaData.url } target="_blank">{ wikipediaData.text }</MuiLink>.
                 <br/>Nothing fancy, just hosting <MuiLink href={ wikipediaData.sourceURL } target="_blank">{ wikipediaData.sourceName }</MuiLink> so I can keep some notes, references (maybe some guides?), and just random thoughts. 
             </Typography>
             <Typography variant="body1" paragraph>
-                I also run an <MuiLink href={ archiveData.url } target="_blank">{ archiveData.text }</MuiLink> where I keep articles that I either reference or enjoy re-reading, and don't want them to be lost due to natural state of the internet. 
+                I also run an <MuiLink href={ archiveData.url } target="_blank">{ archiveData.text }</MuiLink> where I keep articles that I either reference or enjoy re-reading, and don't want them to be lost due to the natural state of the internet. 
                 <br/>In case you want to have your own, it's called <MuiLink href={ archiveData.sourceURL } target="_blank">{ archiveData.sourceName }</MuiLink>. I have my issues with it, don't get me started on the topic.
             </Typography>
             <Typography variant="body1" paragraph>
@@ -80,7 +80,7 @@ function ProjectsText() {
                 <br/>A one page application that shows Markers on a rendered GeoJSON file with Leaflet, to display a few of the places I either visited or want to visit. 
             </Typography>
             <Typography variant="body1" paragraph>
-               I also host a few more services, but either I don't want or can't share publically.
+               I also host a few more services, but either I don't want or can't share publicly.
             </Typography>
             <Typography variant="body1" paragraph>
                Besides that, I like to run my own HomeLab, with all the whistles and bells (and the nerve destroying) that come from it.
