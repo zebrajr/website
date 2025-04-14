@@ -23,9 +23,9 @@ const projects = [
         description: 'A ready-to-use LAMP stack in Docker'
     },
     {
-        name: 'IMDB Scrapper',
-        url: 'https://github.com/zebrajr/imdbscrapper',
-        description: 'Scrapper to get movies and shows information from IMDB'
+        name: 'Lily58 Keyboard',
+        url: 'https://github.com/zebrajr/lily58_keyboard',
+        description: 'Files used to generate Firmware for a Lily58 Pro / Lily58 Pro Wireless '
     },
     {
         name: 'HomeLab',
@@ -51,6 +51,11 @@ const projects = [
         name: 'ReactoCalc',
         url: 'https://github.com/zebrajr/ReactoCalc',
         description: 'A React application that does calculations that (are sometimes) useful.'
+    },
+    {
+        name: 'IMDB Scrapper',
+        url: 'https://github.com/zebrajr/imdbscrapper',
+        description: 'Scrapper to get movies and shows information from IMDB'
     }
 ];
 
